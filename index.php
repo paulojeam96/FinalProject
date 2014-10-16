@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet " type="text/css" href=""/>
+        <link rel="stylesheet " type="text/css" href="css.css"/>
     </head>
     
     <body>
@@ -14,6 +14,10 @@
                     <li><a>MATÉRIAS</a></li>
                     <li><a>CADASTRO</a></li>
                 </ul>
+                <form id="search" method="get">
+			<input type="text" name="searchQuery" placeholder="Busca"/>
+			<input type="submit" value=""/>
+		</form>
             </nav>
         </div>
         
@@ -21,9 +25,15 @@
             
         </header>
         
+        <section>
+            
+        </section>
         
-              
+        <footer>
+            <div id="copy">Copyright - <strong>Hugo</strong> &copy; 2015</div>
+        </footer>      
     </body>
+    
 </html>
 <?php
  
