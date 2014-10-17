@@ -6,18 +6,17 @@
 
 body{
    
-	background-image: url("../imagens/login.jpg");
-	background-repeat: repeat;
+	background-image: url("imagens/login.jpg");
 	background-attachment: fixed;
-	background-position: -80px 0;
+        background-size:100%;
 	font-family: Verdana, Arial, Tahoma;
-	margin: 0px;
+	margin-left: 0px;
+        padding-left:0%;
  
 }
 /* Body header */
-/*
- * Floating nav bar Begin (full)
- */
+
+
 #mainNav{
    position: fixed;
 	z-index: 100;
@@ -26,10 +25,7 @@ body{
 	min-width: 970px;
 	line-height: 40px;
 	text-align: center;
-	background: -webkit-linear-gradient(#292929 0%, #555555 50%, #292929 100%); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#292929 0%, #555555 50%, #292929 100%); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#292929 0%, #555555 50%, #292929 100%); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#292929 0%, #555555 50%, #292929 100%); /* Standard syntax */ 
+        background-color: rgba(144, 144, 144, 0.6);
 }
 
 /* Categorias (Navbar) */
@@ -42,7 +38,7 @@ body{
 #mainNav ul li {
 	display: inline;
 	list-style: none;
-	margin-right: 20px;
+	margin-right: 40px;
 	color: #fff;
 	font-weight: bold;
 }
@@ -72,3 +68,52 @@ root {
     display: block;
 }
 
+div{
+        border-radius: 8px 8px 8px 8px;
+	border: 2px #000 solid;
+	height:40px;
+	margin-left:0%;
+
+}
+
+section{
+    heigth: 500px;
+    backgorund-color:white;
+    
+}
+
+#block1{
+	width:1000px;
+        heigth:700px;
+	float:left;
+	border-radius: 8px 8px 8px 8px;
+	background-color:rgba(144, 144, 144, 0.6);
+}
+
+#body{
+    margin-left:17%;
+    
+}
+header{
+	background-color:blue;
+	width:100%;
+	height:150px;
+}
+
+section{
+	background-color:rgba(144, 144, 144, 0.6);
+	width:500;
+	height:560px;
+	float:left;
+	padding: 20px;
+        margin-left:0%
+}
+
+footer{
+    
+    background-color:rgba(144, 144, 144, 0.6);
+    heigth: 100px;
+    width:100%;
+    margin-top:700px;
+    
+}
