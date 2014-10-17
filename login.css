@@ -1,0 +1,16 @@
+body{
+    background-image: url("imagens/Login.jpg"); 
+    background-size: 100%;
+    margin:15%;
+    padding-left:25%;
+    padding-right: 25%;
+}
+
+div{
+    background-color: rgba(144, 144, 144, 0.6);
+    border-style: solid;
+    border-radius:5px;
+    border-width:5px;
+    border-color: #C0C0C0;
+}
+
