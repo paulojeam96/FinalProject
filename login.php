@@ -7,11 +7,17 @@
     </head>
     
     <body>
-        <div>
-            <form>
-                <p>Nome: <input type="text" name="nome" size="20"></p>
-            </form>
-        </div> 
-        
-    </body>    
+        <section>
+            <div class="login">
+                <h1>Login </h1>
+                <form method="post" action="index.html">
+                    <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+                    <p><input type="password" name="password" value="" placeholder="Password"></p>
+                    
+                </form>
+            </div>
+        </section>
+
+  
+    </body>
 </html>
