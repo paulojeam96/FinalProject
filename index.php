@@ -26,7 +26,12 @@
         </header>
         
         <section>
-            
+            <p> Ola ola ola</p>
+                        <div id="block1"></div>
+			<div id="block2"></div>
+			<div id="block3"></div>
+			<div id="block4"></div>
+			<div id="block5"></div>
         </section>
         
         <footer>
