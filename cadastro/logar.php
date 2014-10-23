@@ -1,5 +1,5 @@
 <?php
-// inclui o arquiv o de configuração do sistema
+// inclui o arquiv o de configuraï¿½ï¿½o do sistema
 include "Config/config_sistema.php";
 // revebe dados do formulario
 $login = htmlspecialchars($_POST['login']);
@@ -16,12 +16,12 @@ if($campos != 0) {
 			  </font></b>";
 		exit;
 	} else {
-		// estiver tudo certo vamos ver se ele é o administrador
+		// estiver tudo certo vamos ver se ele ï¿½ o administrador
 		if($login == $login_admin) {
 			// se for o login do administrador vamos verificar a senha dele
-			// se é igual a do administrado
+			// se ï¿½ igual a do administrado
 			if($senha == $senha_admin) {
-				// se for o administrador vomos criar a sessão
+				// se for o administrador vomos criar a sessï¿½o
 				session_start();
 				$_SESSION['login_usuario'] = $login;
 				$_SESSION['senha_usuario'] = $senha;
@@ -31,7 +31,7 @@ if($campos != 0) {
 				
 			}
 		} else {
-			// se o login não for do administrado vamos criar a sessão dele
+			// se o login nï¿½o for do administrado vamos criar a sessï¿½o dele
 			session_start();
 			$_SESSION['login_usuario'] = $login;
 			$_SESSION['senha_usuario'] = $senha;
@@ -42,7 +42,7 @@ if($campos != 0) {
 	}
 } else {
 	echo "<font color=red><b>
-		  O usuario não existe!
+		  O usuario nÃ£o existe!
 		  </font></b>";
 	exit;
 }

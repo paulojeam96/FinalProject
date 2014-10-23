@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
 <title>Untitled Document</title>
 </head>
 
@@ -48,8 +48,8 @@ if($login == "") {
 	$consulta = mysql_query("select * from dados_usuarios where Login = '$login'");
 	$linha = mysql_num_rows($consulta);
 	if($linha != 0) {
-		echo "O nome de usuario que voc�<br>
-			  Digitou j� existe tente outro!";
+		echo "O nome de usuario que você<br>
+			  Digitou já existe tente outro!";
 		exit;
 	}
 }
@@ -89,21 +89,21 @@ if(!in_array($sexo,$arr_sexo)) {
 // verifica a data de nascimento do usuario
 // verifica o dia
 if($dia == "") {
-	echo "Escolha o dia que voc� nasceu!";
+	echo "Escolha o dia que você nasceu!";
 	exit;
 } else {
 	// verifica o mes
 	if($mes == "") {
-		echo "Escolha o m�s que voc� nasceu!";
+		echo "Escolha o mês que você nasceu!";
 		exit;
 	} else {
 		// verifica o ano
 		if($ano == "") {
-			echo "Escolha o ano que voc� nasceu!";
+			echo "Escolha o ano que você nasceu!";
 			exit;
 		} else {
-			// se o Dia, o M�s e o Ano passaram
-			// vamos juntalos numa so varivel
+			// se o Dia, o Mês e o Ano passaram
+			// vamos junta-los numa so varivel
 			$data_nasc = $dia."/".$mes."/".$ano;
 		}
 	}
@@ -111,25 +111,25 @@ if($dia == "") {
 
 // verifica o pais
 if($pais == "") {
-	echo "Digite o pa�s onde voc� mora!";
+	echo "Digite o país onde você mora!";
 	exit;
 }
 
 // verifica o estado
 if($estado == "") {
-	echo "Digite o estado onde voc� mora!";
+	echo "Digite o estado onde você mora!";
 	exit;
 }
 
 // verifica a cidade
 if($cidade == "") {
-	echo "Digite a cidade onde voc� mora!";
+	echo "Digite a cidade onde você mora!";
 	exit;
 }
 
 // verifica o cep
 if($cep == "") {
-	echo "Digite o CEP de onde voc� mora!";
+	echo "Digite o CEP de onde você mora!";
 	exit;
 }
 

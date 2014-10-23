@@ -2,22 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<script>
-		$(function(){
-		  var $form_inputs =   $('form input');
-		  var $rainbow_and_border = $('.rain, .border');
-		  /* Used to provide loping animations in fallback mode */
-		  $form_inputs.bind('focus', function(){
-		  	$rainbow_and_border.addClass('end').removeClass('unfocus start');
-		  });
-		  $form_inputs.bind('blur', function(){
-		  	$rainbow_and_border.addClass('unfocus start').removeClass('end');
-		  });
-		  $form_inputs.first().delay(800).queue(function() {
-			$(this).focus();
-		  });
-		});
-	</script>
+	
 		<style>
 			body{
                                 background-image:url('imagens/Login.jpg');
@@ -33,10 +18,7 @@
 			}
 			/* Layout with mask */
 			.rain{
-				 padding: 10px;
-				 -moz-box-shadow: 10px 10px 10px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset;
-				 -webkit-box-shadow: 8px 8px 8px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset;
-				 box-shadow: 8px 8px 8px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset;
+				 padding: 50px;
 				 margin: 100px auto;
                                  
 			}
@@ -47,41 +29,6 @@
 			    -webkit-border-radius: 5px;
 				border-radius: 5px;
                                 
-			}
-
-			
-			
-			
-			/* Keyfram-licious animation */
-			@-webkit-keyframes colors {
-			    0% {background-color: #39f;}
-			    15% {background-color: #F246C9;}
-			    30% {background-color: #4453F2;}
-			    45% {background-color: #44F262;}
-			    60% {background-color: #F257D4;}
-			    75% {background-color: #EDF255;}
-			    90% {background-color: #F20006;}
-			    100% {background-color: #39f;}
-		    }
-		    .border,.rain{
-			    -webkit-animation-direction: normal;
-			    -webkit-animation-duration: 20s;
-			    -webkit-animation-iteration-count: infinite;
-			    -webkit-animation-name: colors;
-			    -webkit-animation-timing-function: ease;
-		    }
-		    
-		    /* In-Active State Style */
-			.border.unfocus{
-				background: #333 !important;	
-				 -moz-box-shadow: 0px 0px 15px rgba(255,255,255,.2);
-				 -webkit-box-shadow: 0px 0px 15px rgba(255,255,255,.2);
-				 box-shadow: 0px 0px 15px rgba(255,255,255,.2);
-				 -webkit-animation-name: none;
-			}
-			.rain.unfocus{
-				background: #000 !important;	
-				-webkit-animation-name: none;
 			}
 			
 			/* Regular Form Styles */

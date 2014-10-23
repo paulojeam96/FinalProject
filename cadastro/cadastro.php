@@ -1,22 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="UTF-8" />
 <title>Untitled Document</title>
-<style type="text/css">
-<!--
-.style1 {font-size: 36px}
-.style2 {color: #FF0000}
-.style3 {
-	color: #FFFFFF;
-	font-weight: bold;
-}
-.style5 {font-size: 12px}
-.style6 {color: #666666; font-weight: bold; }
-.style7 {color: #000000}
-.style9 {color: #FF0000; font-weight: bold; }
--->
-</style>
+
 </head>
 
 <body>
