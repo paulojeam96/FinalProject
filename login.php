@@ -90,12 +90,14 @@
 	<body id="home">
 		<div class="rain">
 			<div class="border start">
-				<form>
+                            
+				<form method="POST" action="valida.php"> 
+                                    <!-- Deve redirecionar para a página de validação -->
 					<label for="email">Email</label>
 					<input name="email" type="text" placeholder="Email"/>
 					<label for="pass">Password</label>
 					<input name="pass" type="password" placeholder="Password"/>
-                                        <input type="submit" value="LOG IN"/>
+                                        <input type="submit" value="LOG IN">
 				</form>
 			</div>
 		</div>
