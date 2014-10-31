@@ -17,7 +17,7 @@ $senha2 = $_POST['senha2'];
 echo "Cadastro realizado com sucesso!";
 
 echo "Seu nome de usuario é: $usuario";
-echo "E e seu e-mail: $email";
+echo "E seu e-mail: $email";
 
 
     
