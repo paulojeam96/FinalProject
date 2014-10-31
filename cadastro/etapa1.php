@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -25,6 +26,12 @@
             
             <div align="center">
                 <center>
+                    <p>Confirmar E-mail: <input type="text" name="email2" size="20"></p>
+                </center>
+            </div>  
+            
+            <div align="center">
+                <center>
                     <p>Data de Nascimento: <input type="text" name="datanascimento" size="20"></p>
                 </center>
             </div>  
@@ -37,11 +44,6 @@
                 </center>
             </div>  
             
-            <div align="center">
-                <center>
-                    <p><input type="submit" value="Prosseguir &gt;&gt;" name="prosseguir"></p>
-                </center>
-            </div>  
             
              <div align="center">
                 <center>
@@ -63,9 +65,24 @@
             
              <div align="center">
                 <center>
-                    <p>Estado: <input type="text" name="estado" size="20"></p>
+                    <p>Estado: <input type="text" name="estado" size="2"></p>
                 </center>
             </div>  
+            
+             <div align="center">
+                <center>
+                    <p>CEP: <input type="text" name="cep" size="9"></p>
+                </center>
+            </div>  
+            
+            
+            <div align="center">
+                <center>
+                    <p><input type="submit" value="Prosseguir &gt;&gt;" name="prosseguir"></p>
+                </center>
+            </div>  
+            
         </form>
     </body>
 </html>
+
