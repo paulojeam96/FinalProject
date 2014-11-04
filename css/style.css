@@ -179,7 +179,7 @@ body {
 
 #featured section a figure img{
 	position: relative;
-	display: inline-block
+	display: inline-block;
 	overflow: hidden;
 	width: 615px;
 	height: 395px;
@@ -502,7 +502,8 @@ body {
 	height: 250px;
 	display: inline-block;
 	text-align: left;
-	vertical-align: top;margin 15px;
+	vertical-align: top;
+        margin: 15px;
 }
 
 .footerTile > h3 {

@@ -13,13 +13,25 @@ $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 $senha2 = $_POST['senha2'];
 
+if($nome == null){
+    echo "O campo 'nome' não pode ficar em branco";
+}
 
-echo "Cadastro realizado com sucesso!";
+if($email != $email2){
+    echo "O campo email não é compatível";
+}
 
-echo "Seu nome de usuario é: $usuario";
-echo "E seu e-mail: $email";
+if($datanascimento == null){
+    echo "O campo 'data de nascimento' não pode ficar em branco";
+}
 
+if($senha != $senha2){
+    echo "As senhas não são compatíveis";
+}
+else{
+    echo "Cadastro realizado com sucesso!";
 
-    
-
+    echo "Seu nome de usuario é: $usuario";
+    echo "E seu e-mail: $email";
+}
 ?>
