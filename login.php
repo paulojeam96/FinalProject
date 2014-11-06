@@ -91,7 +91,7 @@
 		<div class="rain">
 			<div class="border start">
                             
-				<form method="POST" action="valida.php"> 
+				<form method="POST" action="cadastra.php"> 
                                     <!-- Deve redirecionar para a página de validação -->
 					<label for="email">Email</label>
 					<input name="email" type="text" placeholder="Email"/>
