@@ -29,17 +29,26 @@ if($datanascimento == null){
     echo "O campo 'data de nascimento' não pode ficar em branco";
 }
 
-if($senha != $senha2 || $senha== null){
+if($senha != $senha2 || $senha == null){
     echo "As senhas não são compatíveis";
 }
-else{
-   echo 
-    "<head>
-    <title>Cadastro realizado com sucesso</title>
-    </head>
-    Cadastro realizado com sucesso!
 
-    Seu nome de usuario é: $usuario
-    E seu e-mail: $email";
+
+else{
+    include "create.php";
+    if($res){
+        echo 
+            "<head>
+            <title>Cadastro realizado com sucesso</title>
+            </head>
+            Cadastro realizado com sucesso!
+
+            Seu nome de usuario é: $usuario
+            E seu e-mail: $email";
+    }
+    else{
+        $message = "Não foi dessa vez! Tente novamente :)" ;
+        echo "<script type='text/javascript'>alert('$message');</script>";
+    }
 }
 ?>

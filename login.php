@@ -66,25 +66,7 @@
 				outline: 1px solid #555;
 				color: #FFF;
 			}
-			input[type="submit"]{
-				color: #999;
-				padding: 5px 10px;
-				float: right;
-				margin: 20px 0;
-				border: 1px solid #000;
-				font-weight: lighter;
-				-moz-border-radius: 15px;
-			    -webkit-border-radius: 15px;
-				border-radius: 15px;
-				background: #45484d;
-				background: -moz-linear-gradient(top, #222 0%, #111 100%);
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222), color-stop(100%,#111));
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22222', endColorstr='#11111',GradientType=0 );
-				-moz-box-shadow: 0px 1px 1px #000, 0px 1px 0px rgba(255,255,255,.3) inset;
-				-webkit-box-shadow: 0px 1px 1px #000, 0px 1px 0px rgba(255,255,255,.3) inset;
-				box-shadow: 0px 1px 1px #000,0px 1px 0px rgba(255,255,255,.3) inset;
-				text-shadow: 0 1px 1px #000;
-			}
+                        
 		</style>
 	</head>
 	<body id="home">
@@ -98,7 +80,11 @@
 					<label for="pass">Password</label>
 					<input name="pass" type="password" placeholder="Password"/>
                                         <input type="submit" value="LOG IN">
-				</form>
+                                        <input type="submit" value="CADASTRAR" action="etapa1.php"/>
+                                </form>      
+                                        
+                                       
+                                
 			</div>
 		</div>
 	</body>
