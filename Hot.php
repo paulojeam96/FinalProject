@@ -3,21 +3,21 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="description" value="Blog de tecnologia e cultura" />
-		<meta name="keywords" value="tecnologia,shuffle,shuffle blog,blog,cultura,video games,games,jogos,musica,filme" />
+		<meta name="keywords" value="" />
 		<meta name="author" value="Hugo Chimello"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.timer.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<title> Blog</title>
+		<title>Shuffle Blog</title>
 	</head>
 	<body>
 		<div id="main">
 			<nav id="mainNav">
 				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="games.html">GAMES</a></li>
-					<li><a href="tec.html">TECNOLOGIA</a></li>
+					<li><a href="index.php">HOME</a></li>
+					<li><a href="Hot.php">HOT</a></li>
+					<li><a href="createpost.php"></a>New Post</li>
 					<li><a href="about.html#single">SOBRE/CONTATO</a></li>
 				</ul>
 				<form id="search" method="get">
@@ -75,37 +75,41 @@
 						<button id="next">&gt;</button>
 					</section>
 					<section id="social">
-						<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fshuffleblog&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true"
+						<iframe src="//"
 						scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;"
 						allowTransparency="true"></iframe>
 						<iframe frameborder="0" id="fr" scrolling="no"
-						src="http://www.youtube.com/subscribe_widget?p=shuffleblogtv"
+						src=""
 						style="border: 0px; height: 72px; background:#E6E6E6; overflow-x: hidden;
 						overflow-y: hidden; width: 300px;"></iframe>
 					</section>
-					<section id="single">
-						<article>
-							<h3>SOBRE</h3>
-							<p>No ar desde 2012, o Shuffle Blog é um veículo online voltado para o público jovem interessado em cultura pop, ou seja, games, filmes, tecnologia, etc. Com um formato diversificado em texto, imagens e vídeos, o SB preza pelo material inovador, trazendo notícias curiosas, criativas, inspiradoras e atuais.</p>
-							<p>Resultado de uma parceria entre dois amigos (Guilherme “Koala” Kyoji & Vitor “Suishiro” Kawai) que se conheceram em um MMORPG há quase 10 anos, o site surgiu a partir da necessidade de uma plataforma para que seus colaboradores expressassem e compartilhassem suas opiniões sobre as novidades.</p>
-							<p>Dito isso, a equipe Shuffle Blog espera que o conteúdo seja agradável e que agregue algum valor cultural aos seus usuários. :)</p>
-
-							<h3>CONTATO</h3>
-							<p>Caso tenha interesse em publicar um artigo, desenvolver uma parceria ou apenas fazer uma crítica, basta preencher o formulário abaixo. Toda mensagem é bem-vinda!</p>
-							<form id="contact" name="contactForm" method="post">
-								<h5 id="nameLabel">Nome <span class="red">*</span>:</h5>
-								<input type="text" placeholder="Escreva o seu nome" name="name" required/>
-								<h5 id="emailLabel">Email <span class="red">*</span>:</h5>
-								<input type="email" placeholder="Escreva o seu email" name="email" required/>
-								<h5 id="webLabel">Website:</h5>
-								<input type="webSite" placeholder="http://site" name="webSite"/>
-								<h5 id="textLabel">Texto <span class="red">*</span>:</h5>
-								<textarea name="text" required></textarea>
-								<br/>
-								<input type="submit" value="Enviar" />
-								(<span class="red">*</span> - Obrigatório)
-							</form>
-						</article>
+					<section class="post-small">
+						<a href="games2.html#single">
+							<figure><img src="images/titanfall.jpg" alt="img" /></figure>
+							<h2>TitanFALL!!!! 2014</h2>
+							<p>Jogo de tiro dos criadores de "Modern Warfare" tem robôs e soldados do futuro.</p>
+						</a>
+					</section>
+					<section class="post-small">
+						<a href="games3.html#single">
+							<figure><img src="images/tlou.jpg" alt="img" /></figure>
+							<h2>The Last of Us , corre que la vem clickers!!!</h2>
+							<p>The Last of Us começa numa zona de quarentena em Boston, vinte anos depois da praga. A órfã de 14 anos, Ellie...</p>
+						</a>
+					</section>
+					<section class="post-small">
+						<a href="games4.html#single">
+							<figure><img src="images/gw2.jpg" alt="img" /></figure>
+							<h2>Guild Wars 2 - MMORPG </h2>
+							<p>A NCSoft, criadora de Guild Wars 2, tem muito a comemorar. De acordo com dados fornecidos pela empresa de pesquisa DFC, o game foi o MMORPG que vendeu mais rápido no ocidente até hoje</p>
+						</a>
+					</section>
+					<section class="post-small">
+						<a href="games1.html#single">
+							<figure><img src="images/watchdogs.jpg" alt="img" /></figure>
+							<h2>Watch Dogs, jogando em Chicago</h2>
+							<p>Watch Dogs" foi revelado pela Ubisoft durante a E3 2012, nos EUA. Com uma qualidade técnica e gráficos impressionantes, o jogo conquistou a platéia logo de cara, mas a demonstração teve seu</p>
+						</a>
 					</section>
 				</section>
 			</section>

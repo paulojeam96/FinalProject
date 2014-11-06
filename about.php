@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="description" value="Shuffle - Blog de tecnologia e cultura" />
+		<meta name="description" value="Blog de tecnologia e cultura" />
 		<meta name="keywords" value="tecnologia,shuffle,shuffle blog,blog,cultura,video games,games,jogos,musica,filme" />
 		<meta name="author" value="Hugo Chimello"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.timer.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<title>Shuffle Blog</title>
+		<title> Blog</title>
 	</head>
 	<body>
 		<div id="main">
@@ -75,41 +75,37 @@
 						<button id="next">&gt;</button>
 					</section>
 					<section id="social">
-						<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fshuffleblog&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true"
+						<iframe src="//"
 						scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;"
 						allowTransparency="true"></iframe>
 						<iframe frameborder="0" id="fr" scrolling="no"
-						src="http://www.youtube.com/subscribe_widget?p=shuffleblogtv"
+						src=""
 						style="border: 0px; height: 72px; background:#E6E6E6; overflow-x: hidden;
 						overflow-y: hidden; width: 300px;"></iframe>
 					</section>
-					<section class="post-small">
-						<a href="tec2.html#single">
-							<figure><img src="images/teclado.png" alt="img" /></figure>
-							<h2>Teclado mais esquisito do mundo</h2>
-							<p>A CES 2014 comeca oficialmente apenas amanhã, porém algumas novidades já estão sendo anunciadas hoje – dia reservado para convidados e imprensa – como é o caso do TREWGrip, um teclado Bluetooth para Smartphones e Tablets.</p>
-						</a>
-					</section>
-					<section class="post-small">
-						<a href="tec4.html#single">
-							<figure><img src="images/robosbr.jpg" alt="img" /></figure>
-							<h2>Equipe Brasileira compete com robos </h2>
-							<p>Uma equipe brasileira formada por estudantes do ensino médio disputará nos Estados Unidos a final mundial de uma competição conhecida no país como o "Super Bowl dos inteligentes". A disputa envolve a ...</p>
-						</a>
-					</section>
-					<section class="post-small">
-						<a href="tec3.html#single">
-							<figure><img src="images/paul.jpg" alt="img" /></figure>
-							<h2>Paul Walker aposentado!?</h2>
-							<p>Paul Walker, ator que faleceu em um acidente de carro no dia 30 de novembro, terá seu personagem aposentado no novo filme ‘Velozes e Furiosos 7‘... </p>
-						</a>
-					</section>
-					<section class="post-small">
-						<a href="tec1.html#single">
-							<figure><img src="images/mouse.png" alt="img" /></figure>
-							<h2>DEATH ADDER, BAD ASS??</h2>
-							<p>Em um anuncio recente, a Razer divulgou imagens do novo mouse Death Adder e mousepad Goliathus estilizado com elementos do jogo World of Tanks, desenvolvido pela gigante dos MMOs F2P, Wargaming.</p>
-						</a>
+					<section id="single">
+						<article>
+							<h3>SOBRE</h3>
+							<p>No ar desde 2012, o Shuffle Blog é um veículo online voltado para o público jovem interessado em cultura pop, ou seja, games, filmes, tecnologia, etc. Com um formato diversificado em texto, imagens e vídeos, o SB preza pelo material inovador, trazendo notícias curiosas, criativas, inspiradoras e atuais.</p>
+							<p>Resultado de uma parceria entre dois amigos (Guilherme “Koala” Kyoji & Vitor “Suishiro” Kawai) que se conheceram em um MMORPG há quase 10 anos, o site surgiu a partir da necessidade de uma plataforma para que seus colaboradores expressassem e compartilhassem suas opiniões sobre as novidades.</p>
+							<p>Dito isso, a equipe Shuffle Blog espera que o conteúdo seja agradável e que agregue algum valor cultural aos seus usuários. :)</p>
+
+							<h3>CONTATO</h3>
+							<p>Caso tenha interesse em publicar um artigo, desenvolver uma parceria ou apenas fazer uma crítica, basta preencher o formulário abaixo. Toda mensagem é bem-vinda!</p>
+							<form id="contact" name="contactForm" method="post">
+								<h5 id="nameLabel">Nome <span class="red">*</span>:</h5>
+								<input type="text" placeholder="Escreva o seu nome" name="name" required/>
+								<h5 id="emailLabel">Email <span class="red">*</span>:</h5>
+								<input type="email" placeholder="Escreva o seu email" name="email" required/>
+								<h5 id="webLabel">Website:</h5>
+								<input type="webSite" placeholder="http://site" name="webSite"/>
+								<h5 id="textLabel">Texto <span class="red">*</span>:</h5>
+								<textarea name="text" required></textarea>
+								<br/>
+								<input type="submit" value="Enviar" />
+								(<span class="red">*</span> - Obrigatório)
+							</form>
+						</article>
 					</section>
 				</section>
 			</section>
@@ -166,7 +162,7 @@
 					<section class="footerTile">
 					</section>
 				</section>
-				<div id="copy">Copyright - <strong>Shuffle Blog</strong> &copy; 2014</div>
+				<div id="copy">Copyright - <strong> Blog</strong> &copy; 2014</div>
 			</footer>
 		</div>
 	</body>

@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="description" value="Shuffle - Blog de tecnologia e cultura" />
-		<meta name="keywords" value="tecnologia,shuffle,shuffle blog,blog,cultura,video games,games,jogos,musica,filme" />
+		<meta name="description" value="" />
+		<meta name="keywords" value="" />
 		<meta name="author" value="Hugo Chimello"/>
 		<link id="mainCss" rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -75,11 +75,11 @@
 						<button id="next">&gt;</button>
 					</section>
 					<section id="social">
-						<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fshuffleblog&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true"
+						<iframe src="//"
 						scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;"
 						allowTransparency="true"></iframe>
 						<iframe frameborder="0" id="fr" scrolling="no"
-						src="http://www.youtube.com/subscribe_widget?p=shuffleblogtv"
+						src=""
 						style="border: 0px; height: 72px; background:#E6E6E6; overflow-x: hidden;
 						overflow-y: hidden; width: 300px;"></iframe>
 					</section>
@@ -133,68 +133,16 @@
 							</section>
 							<section id="postComments">
 								<h3>Comentários</h3>
-								<form method="post" name="commentInput">
-									<h5 id="nameLabel">Nome <span class="red">*</span>:</h5>
-									<input type="text" placeholder="Escreva o seu nome" name="name" required/>
-									<h5 id="emailLabel">Email <span class="red">*</span>:</h5>
-									<input type="email" placeholder="Escreva o seu email" name="email" required/>
-									<h5 id="textLabel">Texto <span class="red">*</span>:</h5>
-									<textarea name="text" required></textarea>
-									<br/>
-									<input type="submit" value="Enviar" />
-									(<span class="red">*</span> - Obrigatório)
-								</form>
-								<br/><br/>
-								<div class="commentDiv">
-									<figure><img src="images/person.png" alt="avatar"/></figure>
-									<h4>Fulano de tal</h4>
-									<div class="comment">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sagittis dui. Proin sed mauris quis felis luctus placerat. Donec ac venenatis sapien, eu mollis neque. Nunc eleifend sed nunc ac porta. Cras eget mollis nisi. Vivamus laoreet leo ligula, eu sagittis lacus tristique sed. Suspendisse ut urna dapibus, accumsan nulla nec, viverra elit. Nunc laoreet varius dolor. Etiam dictum tortor eget ligula congue aliquam.
-										</p>
-										<p>
-											Etiam rhoncus turpis vitae dictum lacinia. Donec auctor pretium commodo. Pellentesque lorem orci, scelerisque non hendrerit ut, malesuada eget sapien. Donec adipiscing commodo enim at bibendum. Nulla a odio vitae massa laoreet placerat vel a nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum accumsan nisl eu eros egestas gravida. Fusce nulla dui, volutpat tristique vulputate mattis, malesuada non libero. Ut sagittis quis urna ut fringilla. Nulla pulvinar vulputate enim, at tempor ante lobortis nec. Etiam odio eros, iaculis vitae justo sit amet, malesuada posuere erat. Suspendisse ornare pharetra pellentesque. Duis aliquet justo vel massa ultrices, eu ullamcorper turpis eleifend. Nulla facilisi. In nec est vestibulum, bibendum enim a, sagittis ante.
-										</p>
-									</div>
-
-									<div class="replyDiv">
-										<figure><img src="images/person.png" alt="avatar"/></figure>
-										<h4>Fulano de tal</h4>
-										<div class="comment">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sagittis dui. Proin sed mauris quis felis luctus placerat. Donec ac venenatis sapien, eu mollis neque. Nunc eleifend sed nunc ac porta. Cras eget mollis nisi. Vivamus laoreet leo ligula, eu sagittis lacus tristique sed. Suspendisse ut urna dapibus, accumsan nulla nec, viverra elit. Nunc laoreet varius dolor. Etiam dictum tortor eget ligula congue aliquam.
-											</p>
-											<p>
-												Etiam rhoncus turpis vitae dictum lacinia. Donec auctor pretium commodo. Pellentesque lorem orci, scelerisque non hendrerit ut, malesuada eget sapien. Donec adipiscing commodo enim at bibendum. Nulla a odio vitae massa laoreet placerat vel a nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum accumsan nisl eu eros egestas gravida. Fusce nulla dui, volutpat tristique vulputate mattis, malesuada non libero. Ut sagittis quis urna ut fringilla. Nulla pulvinar vulputate enim, at tempor ante lobortis nec. Etiam odio eros, iaculis vitae justo sit amet, malesuada posuere erat. Suspendisse ornare pharetra pellentesque. Duis aliquet justo vel massa ultrices, eu ullamcorper turpis eleifend. Nulla facilisi. In nec est vestibulum, bibendum enim a, sagittis ante.
-											</p>
-										</div>
-									</div>
-									<div class="replyDiv">
-										<figure><img src="images/person.png" alt="avatar"/></figure>
-										<h4>Fulano de tal</h4>
-										<div class="comment">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sagittis dui. Proin sed mauris quis felis luctus placerat. Donec ac venenatis sapien, eu mollis neque. Nunc eleifend sed nunc ac porta. Cras eget mollis nisi. Vivamus laoreet leo ligula, eu sagittis lacus tristique sed. Suspendisse ut urna dapibus, accumsan nulla nec, viverra elit. Nunc laoreet varius dolor. Etiam dictum tortor eget ligula congue aliquam.
-											</p>
-											<p>
-												Etiam rhoncus turpis vitae dictum lacinia. Donec auctor pretium commodo. Pellentesque lorem orci, scelerisque non hendrerit ut, malesuada eget sapien. Donec adipiscing commodo enim at bibendum. Nulla a odio vitae massa laoreet placerat vel a nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum accumsan nisl eu eros egestas gravida. Fusce nulla dui, volutpat tristique vulputate mattis, malesuada non libero. Ut sagittis quis urna ut fringilla. Nulla pulvinar vulputate enim, at tempor ante lobortis nec. Etiam odio eros, iaculis vitae justo sit amet, malesuada posuere erat. Suspendisse ornare pharetra pellentesque. Duis aliquet justo vel massa ultrices, eu ullamcorper turpis eleifend. Nulla facilisi. In nec est vestibulum, bibendum enim a, sagittis ante.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="commentDiv">
-									<figure><img src="images/person.png" alt="avatar"/></figure>
-									<h4>Fulano de tal</h4>
-									<div class="comment">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sagittis dui. Proin sed mauris quis felis luctus placerat. Donec ac venenatis sapien, eu mollis neque. Nunc eleifend sed nunc ac porta. Cras eget mollis nisi. Vivamus laoreet leo ligula, eu sagittis lacus tristique sed. Suspendisse ut urna dapibus, accumsan nulla nec, viverra elit. Nunc laoreet varius dolor. Etiam dictum tortor eget ligula congue aliquam.
-										</p>
-										<p>
-											Etiam rhoncus turpis vitae dictum lacinia. Donec auctor pretium commodo. Pellentesque lorem orci, scelerisque non hendrerit ut, malesuada eget sapien. Donec adipiscing commodo enim at bibendum. Nulla a odio vitae massa laoreet placerat vel a nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum accumsan nisl eu eros egestas gravida. Fusce nulla dui, volutpat tristique vulputate mattis, malesuada non libero. Ut sagittis quis urna ut fringilla. Nulla pulvinar vulputate enim, at tempor ante lobortis nec. Etiam odio eros, iaculis vitae justo sit amet, malesuada posuere erat. Suspendisse ornare pharetra pellentesque. Duis aliquet justo vel massa ultrices, eu ullamcorper turpis eleifend. Nulla facilisi. In nec est vestibulum, bibendum enim a, sagittis ante.
-										</p>
-									</div>
-								</div>
-							</section>
+								<div id="fb-root"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                      var js, fjs = d.getElementsByTagName(s)[0];
+                                                                      if (d.getElementById(id)) return;
+                                                                      js = d.createElement(s); js.id = id;
+                                                                      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                                                                      fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+								<div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-numposts="5" data-colorscheme="light"></div>
+                                                                
 						</footer>
 					</section>
 				</section>
@@ -252,7 +200,7 @@
 					<section class="footerTile">
 					</section>
 				</section>
-				<div id="copy">Copyright - <strong>Shuffle Blog</strong> &copy; 2014</div>
+				<div id="copy">Copyright - <strong></strong> &copy; 2014</div>
 			</footer>
 		</div>
 	</body>
