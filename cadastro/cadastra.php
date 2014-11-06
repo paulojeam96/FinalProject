@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<head>
+    <meta charset="UTF-8">
+</head>
 <?php
 $nome = $_POST['nome'];
 $email = $_POST['email'];
@@ -15,7 +17,7 @@ $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 $senha2 = $_POST['senha2'];
 
-echo "<meta charset = 'UTF-8' >";
+
 
 if($nome == null){
     echo "O campo 'nome' não pode ficar em branco";
@@ -35,7 +37,7 @@ if($senha != $senha2 || $senha == null){
 
 
 else{
-    include "create.php";
+    include "database/create.php";
     if($res){
         echo 
             "<head>
@@ -47,7 +49,7 @@ else{
             E seu e-mail: $email";
     }
     else{
-        $message = "Não foi dessa vez! Tente novamente :)" ;
+        $message = "ERRO. Usuario não cadastrado" ;
         echo "<script type='text/javascript'>alert('$message');</script>";
     }
 }
