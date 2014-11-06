@@ -17,7 +17,7 @@
 				<ul>
 					<li><a href="index.php">HOME</a></li>
 					<li><a href="Hot.php">HOT</a></li>
-					<li><a href="createpost.php"></a>New Post</li>
+					<li><a href="createpost.php">New Post</a></li>
 					<li><a href="about.html#single">SOBRE/CONTATO</a></li>
 				</ul>
 				<form id="search" method="get">
