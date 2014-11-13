@@ -1,7 +1,10 @@
 <?php
 
-$conexao = mysqli_connect("localhost", "root", "", "usuario" );
-if (mysqli_connect_errno()) {
-    echo "erro na conexão!" . mysqli_connect_error();
-}
+$host = "localhost";
+$user = "root";
+$bd = "usuario";
+$senha = "";
+
+$conexao = mysql_pconnect($host, $user, $senha ) or die(mysql_error());
+mysql_select_db($bd, $conexao);
 ?>

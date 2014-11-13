@@ -6,12 +6,12 @@
 	<body>
 		<?php
 			//1. cria conexao
-			include "conecta_mysql.php"; 
+			include "conectaSQL.php"; 
 			//2. criar e executar a query
 			$query="INSERT INTO usuario(nome,email,datanascimento,telefone,sexo,endereco,cidade,estado,cep,usuario,senha) VALUES('$nome','$email','$datanascimento','$telefone','$sexo','$endereco','$cidade','$estado','$cep','$usuario','$senha')";
-			$res= mysqli_query($conexao, $query);
+			$res= mysql_query($conexao, $query);
 			//3. fechar conexao
-			mysqli_close($conexao);
+			mysql_close($conexao);
 		?>
 	</body>
 </html>
