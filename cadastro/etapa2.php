@@ -24,7 +24,7 @@
             
             <div align="center">
                 <center>
-                    <p>Nome de Usuario: <input type="text" name="usuario" size="20"></p>
+                    <p>Login: <input type="text" name="login" size="20"></p>
                 </center>
             </div>  
             
