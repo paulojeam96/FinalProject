@@ -35,55 +35,8 @@
 			</header>
 			<section id="contentBody">
 				<section id="posts">
-					<section id="featured">
-						<section id="featPost1">
-							<a href="tec1.html#single">
-								<figure><img src="images/mouse.png" alt="img" /></figure>
-								<h1>DEATH ADDER, BAD ASS??</h1>
-								<p>Em um anuncio recente, a Razer divulgou imagens do novo mouse Death Adder e mousepad Goliathus estilizado com elementos do jogo World of Tanks, desenvolvido pela gigante dos MMOs F2P, Wargaming.</p>
-							</a>
-						</section>
-						<section id="featPost2">
-							<a href="tec2.html#single">
-								<figure><img src="images/teclado.png" alt="img" /></figure>
-								<h1>Teclado mais esquisito do mundo</h1>
-								<p>A CES 2014 comeca oficialmente apenas amanhã, porém algumas novidades já estão sendo anunciadas hoje – dia reservado para convidados e imprensa – como é o caso do TREWGrip, um teclado Bluetooth para Smartphones e Tablets.</p>
-							</a>
-						</section>
-						<section id="featPost3">
-							<a href="tec3.html#single">
-								<figure><img src="images/paul.jpg" alt="img" /></figure>
-								<h1>Paul Walker aposentado!?</h1>
-								<p>Paul Walker, ator que faleceu em um acidente de carro no dia 30 de novembro, terá seu personagem aposentado no novo filme ‘Velozes e Furiosos 7[...]</p>
-							</a>
-						</section>
-						<section id="featPost4">
-							<a href="games1.html#single">
-								<figure><img src="images/watchdogs.jpg" alt="img" /></figure>
-								<h1>Watch Dogs, jogando em Chicago</h1>
-								<p>Watch Dogs" foi revelado pela Ubisoft durante a E3 2012, nos EUA. Com uma qualidade técnica e gráficos impressionantes, o jogo conquistou a platéia logo de cara, mas a demonstração teve seu[...]</p>
-							</a>
-						</section>
-						<section id="featPost5">
-							<a href="games2.html#single">
-								<figure><img src="images/titanfall.jpg" alt="img" /></figure>
-								<h1>TitanFALL!!!! 2014</h1>
-								<p>Jogo de tiro dos criadores de "Modern Warfare" tem robôs e soldados do futuro.</p>
-							</a>
-						</section>
-						<div id="progressWrapper"><div id="progressBar"></div></div>
-						<button id="prev">&lt;</button>
-						<button id="next">&gt;</button>
-					</section>
-					<section id="social">
-						<iframe src="//"
-						scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;"
-						allowTransparency="true"></iframe>
-						<iframe frameborder="0" id="fr" scrolling="no"
-						src=""
-						style="border: 0px; height: 72px; background:#E6E6E6; overflow-x: hidden;
-						overflow-y: hidden; width: 300px;"></iframe>
-					</section>
+					
+					
 					<section id="single">
 						<header>
 							<figure>
@@ -111,17 +64,17 @@
                                                             $db_name="test"; // Database name 
                                                             $tbl_name="forum_question"; // Table name 
 
-                                                            // Connect to server and select database.
+                                                            
                                                             mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
                                                             mysql_select_db("$db_name")or die("cannot select DB");
 
-                                                            // get data that sent from form 
+                                                           
                                                             $topic=$_POST['topic'];
                                                             $detail=$_POST['detail'];
                                                             $name=$_POST['name'];
                                                             $email=$_POST['email'];
 
-                                                            $datetime=date("d/m/y h:i:s"); //create date time
+                                                            $datetime=date("d/m/y h:i:s"); e
 
                                                             $sql="INSERT INTO $tbl_name(topic, detail, name, email, datetime)VALUES('$topic', '$detail', '$name', '$email', '$datetime')";
                                                             $result=mysql_query($sql);
