@@ -34,12 +34,14 @@ if($senha != $senha2 || $senha == null){
 }
 
 else{
+    echo "oi";
                 //1. cria conexao
-		include "database/conectaSQL.php"; 
+		include "../database/conectaSQL.php"; 
                 //2. criar e executar a query
-		$query="INSERT INTO usuario(nome,email,datanascimento,telefone,sexo,endereco,cidade,estado,cep,usuario,senha) VALUES('$nome','$email','$datanascimento','$telefone','$sexo','$endereco','$cidade','$estado','$cep','$usuario','$senha')";
-		$res= mysql_query($conexao, $query);
-                        if($res){
+		$query="INSERT INTO usuario (nome,email,datanascimento,telefone,sexo,endereco,cidade,estado,cep,usuario,senha) VALUES('$nome','$email','$datanascimento','$telefone','$sexo','$endereco','$cidade','$estado','$cep','$usuario','$senha')";
+              
+                echo " ei". $conexao->query($query);
+                if($conexao->query($query)) {
                                echo 
                                    "<head>
                                    <title>Cadastro realizado com sucesso</title>
@@ -49,9 +51,12 @@ else{
                                    E seu e-mail: $email";
                         }
                             else{
-                                $message = "ERRO. Usuario não cadastrado" ;
+                               
+                                $message =  "ERRO. Usuario não cadastrado";
                                 echo "<script type='text/javascript'>alert('$message');</script>";
-                            }       
+                            }     
+                echo $query;
+                            
 		//3. fechar conexao
 		mysql_close($conexao);
 }

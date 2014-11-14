@@ -11,6 +11,6 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `estado` varchar(2) NOT NULL,
   `cep` varchar(9) NOT NULL,
   `usuario` varchar(10) NOT NULL,
-  `senha` varchar(12) NOT NULL
-) Primary Key (ID)) ENGINE = MyISAM;
+  `senha` varchar(12) NOT NULL,h
+ primary key (ID));
 
