@@ -34,28 +34,24 @@ if($senha != $senha2 || $senha == null){
 }
 
 else{
-    echo "oi";
+    
                 //1. cria conexao
 		include "../database/conectaSQL.php"; 
                 //2. criar e executar a query
-		$query="INSERT INTO usuario (nome,email,datanascimento,telefone,sexo,endereco,cidade,estado,cep,usuario,senha) VALUES('$nome','$email','$datanascimento','$telefone','$sexo','$endereco','$cidade','$estado','$cep','$usuario','$senha')";
+		$query="INSERT INTO usuario(nome,email,datanascimento,telefone,sexo,endereco,cidade,estado,cep,usuario,senha) VALUES('$nome','$email','$datanascimento','$telefone','$sexo','$endereco','$cidade','$estado','$cep','$login','$senha')";
               
-                echo " ei". $conexao->query($query);
-                if($conexao->query($query)) {
+                $conexao=$query;
+                if($conexao) {
                                echo 
-                                   "<head>
-                                   <title>Cadastro realizado com sucesso</title>
-                                   </head>
-                                   Cadastro realizado com sucesso!
-                                   Seu nome de usuario é: $usuario
-                                   E seu e-mail: $email";
+                                   $message = "Cadastro realizado com sucesso";
+                                   echo "<script type'text/javascript'>alert('$message');</script>";
                         }
                             else{
                                
                                 $message =  "ERRO. Usuario não cadastrado";
                                 echo "<script type='text/javascript'>alert('$message');</script>";
                             }     
-                echo $query;
+                
                             
 		//3. fechar conexao
 		mysql_close($conexao);
