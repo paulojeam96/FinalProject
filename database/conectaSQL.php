@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $bd = "usuario";
-$senha = "linux";
+$senha = "";
 
 $conexao = mysqli_connect($host, $user, $senha, $bd );
 if(!$conexao) {

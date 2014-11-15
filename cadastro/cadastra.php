@@ -13,7 +13,7 @@ $endereco = $_POST['endereco'];
 $cidade = $_POST['cidade'];
 $estado = $_POST['estado'];
 $cep = $_POST['cep'];
-$login = $_POST['login'];
+$usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 $senha2 = $_POST['senha2'];
 
@@ -38,13 +38,14 @@ else{
                 //1. cria conexao
 		include "../database/conectaSQL.php"; 
                 //2. criar e executar a query
-		$query="INSERT INTO usuario(nome,email,datanascimento,telefone,sexo,endereco,cidade,estado,cep,usuario,senha) VALUES('$nome','$email','$datanascimento','$telefone','$sexo','$endereco','$cidade','$estado','$cep','$login','$senha')";
+		$query="INSERT INTO usuario(nome,email,datanascimento,telefone,sexo,endereco,cidade,estado,cep,usuario,senha) VALUES('$nome','$email','$datanascimento','$telefone','$sexo','$endereco','$cidade','$estado','$cep','$usuario','$senha')";
               
                 $conexao=$query;
                 if($conexao) {
-                               echo 
+                              
                                    $message = "Cadastro realizado com sucesso";
                                    echo "<script type'text/javascript'>alert('$message');</script>";
+                                   header("Location:../login.html");
                         }
                             else{
                                
@@ -52,8 +53,7 @@ else{
                                 echo "<script type='text/javascript'>alert('$message');</script>";
                             }     
                 
-                            
-		//3. fechar conexao
-		mysql_close($conexao);
-}
+               
+}             
+		
 ?>
