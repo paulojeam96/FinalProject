@@ -17,24 +17,6 @@ $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 $senha2 = $_POST['senha2'];
 
-if($nome == null){
-    echo "O campo 'nome' não pode ficar em branco";
-}
-
-if($email != $email2){
-    echo "O campo email não é compatível";
-}
-
-if($datanascimento == null){
-    echo "O campo 'data de nascimento' não pode ficar em branco";
-}
-
-if($senha != $senha2 || $senha == null){
-    echo "As senhas não são compatíveis";
-}
-
-else{
-    
                 //1. cria conexao
 		include "../database/conectaSQL.php"; 
                 //2. criar e executar a query
@@ -45,7 +27,8 @@ else{
                               
                                    $message = "Cadastro realizado com sucesso";
                                    echo "<script type'text/javascript'>alert('$message');</script>";
-                                   header("Location:../login.html");
+                                   echo "</br>";
+                                   echo "Vá para a pagina de <a href='../login.html'> login!</a>";
                         }
                             else{
                                
@@ -54,6 +37,6 @@ else{
                             }     
                 
                
-}             
+             
 		
 ?>
