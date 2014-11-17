@@ -3,85 +3,71 @@
     <head>
         <meta charset="UTF-8">
         <title>Página de Cadastro</title>
+        <link rel="stylesheet" type="text/css" href="../css/cadastroCSS.css"/>
     </head>
     
     <body>
         
-        <p align="center"><big><big>
-                <strong>Parte 1 de 2</strong></big></big>      
-        </p> 
-        
-        <form method="POST" action="etapa2.php">
-            <div align="center">
-                <center>
-                    <p>Nome: <input type="text" name="nome" size="20"></p>
-                </center>
-            </div>  
-            
-            <div align="center">
-                <center>
-                    <p>E-mail: <input type="text" name="email" size="20"></p>
-                </center>
-            </div>  
-            
-            <div align="center">
-                <center>
-                    <p>Confirmar E-mail: <input type="text" name="email2" size="20"></p>
-                </center>
-            </div>  
-            
-            <div align="center">
-                <center>
-                    <p>Data de Nascimento: <input type="text" name="datanascimento" size="20"></p>
-                </center>
-            </div>  
-            
-            <div align="center">
-                <center>
-                    <p>Sexo: <input type="radio" value="masculino" checked name="sexo">Masculino&nbsp;&nbsp; 
-                             <input type="radio" name="sexo" value="feminino">Feminino
-                    </p>         
-                </center>
-            </div>  
-            
-            
-             <div align="center">
-                <center>
-                    <p>Telefone: <input type="text" name="telefone" size="20"></p>
-                </center>
-            </div>  
-            
-             <div align="center">
-                <center>
-                    <p>Endereço: <input type="text" name="endereco" size="20"></p>
-                </center>
-            </div>  
-            
-             <div align="center">
-                <center>
-                    <p>Cidade: <input type="text" name="cidade" size="20"></p>
-                </center>
-            </div>  
-            
-             <div align="center">
-                <center>
-                    <p>Estado: <input type="text" name="estado" size="2"></p>
-                </center>
-            </div>  
-            
-             <div align="center">
-                <center>
-                    <p>CEP: <input type="text" name="cep" size="9"></p>
-                </center>
-            </div>  
-            
-            
-            <div align="center">
-                <center>
-                    <p><input type="submit" value="Prosseguir &gt;&gt;" name="prosseguir"></p>
-                </center>
-            </div>  
-            
+        <form action="cadastra.php" method="post">
+            <fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" style="width: 10em" value="" />
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" style="width: 10em" value="" />
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <label>Sexo</label>
+                    <label>
+                        <input type="radio" name="sexo" value="masculino"> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="feminino"> Feminino
+                    </label>
+                </div>
+                
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone" style="width: 10em"  value="" />
+                </div>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" style="width: 10em" value="" />
+                    </div>
+                    <div class="campo">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" style="width: 2em" value="" />
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" style="width: 10em" value=""/>               
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <label>
+                        <input type="text" id="senha" name="senha" style="width: 10em" value=""/>
+                    </label>
+                </div>
+                
+                 <div class="campo">
+                    <label for="senha2">Confirme sua Senha</label>
+                    <label>
+                        <input type="text" id="senha2" name="senha2" style="width: 10em" value=""/>
+                    </label>
+                </div>
+
+                <button type="submit" name="submit">Enviar</button>
+
+            </fieldset>
         </form>
     </body>
 </html>

@@ -1,34 +1,40 @@
 <?php
-    $usuario = $_POST['usuario'];
-    $entrar = $_POST['entrar'];
-    $senha = ($_POST['senha']);
-    $bd="usuario";
-    $connect = mysqli_connect("localhost","root","", $bd);
-   
-    if($login == null ){
-        echo "O campo login não pode ficar em branco!";
-        header("Location:login.html"); exit;
-    }
-    if($senha == null){
-        echo "O campo senha não pode ficar em branco!";
-        header("Location:login.html"); exit;
-    }
-    
-    
-   include "../database/conectaSQL.php";
-   $found = false;
-   
-   $resultado = mysqli_query($conexao, "SELECT * from usuario WHERE nome='$login' AND senha='$senha'") or die("Não foi possível executar a SQL: ".mysqli_error($conexao));
-   if($resultado){ 	 
-        $encontrou = true;
-        header("Location : index.php");
-    }
-
-     
-    if(!$encontrou){
-        echo "Erro no login!";
-        header("Location : login.html");
-    }
-        // fechamento da conexão   
-        mysqli_close($conexao);
+	$usuario=$_POST['usuario'];
+	$senha=$_POST['senha'];
+	
+	//1. cria conexao
+	include "database/conectaSQL.php"; 
+	//2. criar e executar a query
+	$query="SELECT senha FROM usuario WHERE usuario='$usuario'";
+	
+	$res= mysqli_query($conexao, $query);
+	
+	//3. saida
+	if($res){
+		
+		while($registro= mysqli_fetch_array($res)){
+			if($registro['senha']==$senha){
+				header("Location: index.php");
+			}
+			else{
+				echo "<script confirm('Falha ao logar');";
+                                header("Location: login.html");
+			}
+			$sql2="SELECT * FROM post WHERE ID=$id";
+			
+			
+			
+			
+		}
+		
+		
+	}
+	else{
+		echo "Falhou meu caro!";
+                echo "<br/>";
+                echo "<a href='login.html'> Voltar</a>";
+	}
+	
+	//4. fechar conexao
+	mysqli_close($conexao);
 ?>
