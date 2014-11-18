@@ -74,7 +74,7 @@
                                                             $name=$_POST['name'];
                                                             $email=$_POST['email'];
 
-                                                            $datetime=date("d/m/y h:i:s"); e
+                                                            $datetime=date("d/m/y h:i:s"); 
 
                                                             $sql="INSERT INTO $tbl_name(topic, detail, name, email, datetime)VALUES('$topic', '$detail', '$name', '$email', '$datetime')";
                                                             $result=mysql_query($sql);
