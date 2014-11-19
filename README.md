@@ -2,7 +2,7 @@ FinalProject Tec Web II
 ============
 
 
-O projeto será um fórum de discussão da FCI com usuarios cadastrados e tópicos de discussão de matérias 
+O site será um blog dinamico de imagens chamado FEEG =D
 
 Integrantes 
 
