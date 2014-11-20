@@ -4,7 +4,7 @@
 	     <title>Feeg - Entrar</title>
 		 <meta charset="utf-8"/>
          <link rel="stylesheet" type="text/css" href="css/style.css"/>
-         <link rel="stylesheet" type="text/css" href="css/login.css">
+         <link rel="stylesheet" type="text/css" href="css/entrar.css">
          <script type="text/javascript">
            var imageCount = 0;
            var currentImage = 0;
@@ -68,7 +68,6 @@
          </header>
          <div class="container">
              <form class="formcad" action="cadastro/cadastra.php" method="POST">
-                <p>Cadastre-se!<br/></p>
                 <p><input name="nome" placeholder="Digite seu nome" type="text" size="45"  required/></p>
                 <p> <input name="usuario" placeholder="Digite seu nome de usuario" type="text" size="45" required/></p>
                 <p><input name="senha" placeholder="Senha" type="password" size="45" required/></p>
@@ -80,7 +79,7 @@
                     <input name="sexo" type="radio" value="Feminino" checked/>Feminino
                 </p>
                  
-                <p><input type="submit" value="Cadastrar-se no FEEG" class="button"/></p>
+                <p id="cadButton"><input type="submit" value="Cadastrar-se no FEEG" class="button"/></p>
              </form>
          </div>
     </body>
