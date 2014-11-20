@@ -19,7 +19,7 @@
            var preLoadImages = new Array();
            for (var i = 0; i < images.length; i++)
            {
-              if (images[i] == "")
+              if (images[i] === "")
               break;
 
               preLoadImages[i] = new Image();
@@ -55,7 +55,7 @@
                      <ul>
                          <img src="imagens/FeegLogo.png" alt="FEEG logo"/>
                          <div>
-                             <li>Usuário:<br/><input name="email" type="text"  required/></li>
+                             <li>Usuário:<br/><input name="usuario" type="text"  required/></li>
                              <li>Senha:<br/><input name="senha" type="password" required/> </li>
                              <li><input type="submit" value="Entrar" class="button"></li>
                              <br/><li><input type="checkbox" name="salvar"/> Deseja salvar os seus dados? </li>
