@@ -1,15 +1,10 @@
 <?php
+    //1. Cria conexão
+    $conexao = mysqli_connect("127.0.0.1","root","","feeg");
 
-$host = "localhost";
-$user = "root";
-$bd = "usuario";
-$senha = "";
-
-    $conexao = mysqli_connect($host, $user, $senha );
-
-    if(mysqli_connect_errno()){
-        echo "Erro na conexão ".mysqli_connect_error();
+    //2. Trata erro
+    if( mysqli_connect_errno() )
+    {
+            echo "Erro na conexão! ".mysqli_connect_error();
     }
-
-
 ?>

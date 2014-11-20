@@ -67,20 +67,20 @@
              </nav>
          </header>
          <div class="container">
-             <form class="formcad" action="cadastrar/validador.php" method="POST">
-                <p>Cadastre-se!<br/> Nem sempre será gratuito! Aproveite enquanto há tempo !</p>
-                <p><input name="nome" placeholder="Nome" type="text" size="19"  required/>
-                    <input name="sobrenome" placeholder="Sobrenome" type="text" size="20" required/></p>
+             <form class="formcad" action="cadastro/cadastra.php" method="POST">
+                <p>Cadastre-se!<br/></p>
+                <p><input name="nome" placeholder="Digite seu nome" type="text" size="45"  required/></p>
+                <p> <input name="usuario" placeholder="Digite seu nome de usuario" type="text" size="45" required/></p>
                 <p><input name="senha" placeholder="Senha" type="password" size="45" required/></p>
                 <p><input name="senha2" placeholder="confirme a senha" type="password" size="45" required/></p>
                 <p><input name="email" placeholder="Insira o e-mail" type="email" size="45" required/></p>
-                <p>Data de Nascimento:<br/><input type="date" name="bDay"/> </p>
+                <p>Data de Nascimento:<br/><input type="date" name="dataNascimento"/> </p>
                 <p>Gênero:<br/>
                     <input name="sexo" type="radio" value="Masculino"/>Masculino
                     <input name="sexo" type="radio" value="Feminino" checked/>Feminino
                 </p>
                  
-                <p><input type="submit" value="Cadastrar-se no Gamebook" class="button"/></p>
+                <p><input type="submit" value="Cadastrar-se no FEEG" class="button"/></p>
              </form>
          </div>
     </body>
