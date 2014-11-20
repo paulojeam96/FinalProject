@@ -30,8 +30,8 @@
                                                
                 </nav>
             </header>
+            
             <div class="container  hFixer">
-
                 <aside>
                     <div class="profile">
                         <header>
@@ -39,6 +39,7 @@
                             <b><a><?php echo "$usuario"?> </a> </b>
                         </header>
                     </div>
+                    
                 </aside>
                 <section id="main">
                     <?php
@@ -49,15 +50,16 @@
                      //2. Mostrar Resultados por amigo
                      if($resultado){
                         while($timeline=mysqli_fetch_array($resultado)){
-                            $post=$timeline['conteudo'];
+                            $img=$timeline['tlID'];
                             $username=$timeline['username'];
+                            $title=$timeline['title'];
                             echo <<<POST
                             <article class='post'>
                                 <header>
-                                    $usuarioIMG
-                                    <a><b>$usuario</b></a>
+                                    <a><b>$username</b></a>
                                 </header>
-                                <p>$post</p>
+                                    <p>$title</p>
+                                <p><img src='timeline/$img.gif'/></p>
                             </article>
 POST;
                         }
@@ -68,7 +70,16 @@ POST;
 
                     ?>  
                 </section>
+                <div id="vai">
+                    <form action="upload.php" enctype="multipart/form-data" method="POST">
+                        <input type="hidden" name="MAX_SIZE_FILE" value="100000"/>
+                        <p>POST a fun:<br/><div id="mandarA"><input id="mandar" name="arquivo" type="file"/></div></p>
+                    <p>Titulo:<input  name="title" type="text" required/></p>
+                        <p><input id="button" type="submit" value="FEEGIT"/></p>
+                    </form>
+                </div>
             </div>
+            
 	</body>
 </html>
 
