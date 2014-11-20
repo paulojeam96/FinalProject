@@ -11,7 +11,7 @@
            var images = new Array();
 
            images[0] = 'imagens/bg1.jpg';
-           images[1] = 'imagens/bg2.jpg';
+           images[1] = 'imagens/bg2.jpeg';
            images[2] = 'imagens/bg3.jpg';
            images[3] = 'imagens/bg4.jpg';
            images[4] = 'imagens/bg5.jpg';
