@@ -53,7 +53,7 @@
              <nav class="barra" >
                  <form action="login.php" class="container" method="POST">
                      <ul>
-                         <img src="imagens/FeegLogo.jpg" alt="FEEG logo"/>
+                         <img src="imagens/FeegLogo.png" alt="FEEG logo"/>
                          <div>
                              <li>Usuário:<br/><input name="email" type="text"  required/></li>
                              <li>Senha:<br/><input name="senha" type="password" required/> </li>
