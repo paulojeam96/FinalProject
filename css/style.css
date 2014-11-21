@@ -33,7 +33,7 @@ ul li a{
 
 aside{
     float:left;
-    width:15%;
+    width:20%;
     margin: auto;
 }
 
@@ -51,8 +51,8 @@ aside{
 
 .profilePic{
     border-radius: 90px;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 
@@ -68,23 +68,12 @@ textarea{
     float:right;
 }
 
-/*Seta*/
-.setaUp:before {
-    
-    content: "";
-    display: inline-block;
-    vertical-align: bottom;
-    width: 0; 
-    height: 0; 
-    background: none;
-    
-    
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 10px solid #cc0000;
+.button {
+    padding:6px 15px;
+    border:2px solid #005500;
+    background:#00cc00;
+    color:#000;
 }
-.menuFix{
-    display: block;
-    background: #cc0000;
-    padding: 5px;
-}
+
+
+

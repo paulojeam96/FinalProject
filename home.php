@@ -23,11 +23,9 @@
                     <div id="centralizador">
                       <ul>
                             <li><img src="imagens/FeegLogo.png" alt="FEEG logo"/></li>
-                            <li id="user"><?php echo $usuario;?><img src='imagens/person.png' alt='profile pic' class='profilePic' id="ico"/></li>
-                            <li><?php// echo "$usuarioIMG"?></li>
+                            <!--<li id="user"><?php echo $usuario;?><img src='imagens/person.png' alt='profile pic' class='profilePic' id="ico"/></li>-->
                         </ul>   
-                    </div>
-                                               
+                    </div>                         
                 </nav>
             </header>
             
@@ -35,8 +33,18 @@
                 <aside>
                     <div class="profile">
                         <header>
-                            <?php echo "$usuarioIMG"?>
+                            <img src='imagens/person.png' alt='profile pic' class='profilePic'/>
                             <b><a><?php echo "$usuario"?> </a> </b>
+                            <ul >
+                                <li class="drop"><img src="imagens/config.png" alt="configuracoes" />
+                                    <ul>
+                                        <div class="setaUP"></div>
+                                        <li><a href="sair.php">Desconectar</a></li>
+                                        <li><a href="sair.php">Trocar imagem</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
                         </header>
                     </div>
                     
@@ -75,7 +83,7 @@ POST;
                         <input type="hidden" name="MAX_SIZE_FILE" value="100000"/>
                         <p>POST a fun:<br/><div id="mandarA"><input id="mandar" name="arquivo" type="file"/></div></p>
                     <p>Titulo:<input  name="title" type="text" required/></p>
-                        <p><input id="button" type="submit" value="FEEGIT"/></p>
+                    <p><input class="button" id="button" type="submit" value="FEEGIT"/></p>
                     </form>
                 </div>
             </div>
