@@ -1,0 +1,33 @@
+nav {
+    height: 80px;
+    color: #FFF;
+    position:fixed;
+    z-index:10;
+    left:0;
+    right: 0;
+    top:0;   
+}
+.formcad{
+    width: 400px;
+    height: 425px;
+    background-color: #111111;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:200px;
+    margin-left:-200px;
+    text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display:inline-block; 
+}
+nav ul div{
+    float:right;
+}
+
+

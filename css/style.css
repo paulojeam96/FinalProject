@@ -1,0 +1,115 @@
+.hidden{
+    display:none;
+}
+body{
+    background-color: #2f2e2e;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container{
+    position:relative;
+    width: 990px;
+    margin: 0 auto;
+}
+
+
+
+a{
+    color: #ce0000;
+    text-decoration: none;
+    color: #00cc00;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li a{
+    color: inherit;
+}
+
+
+aside{
+    float:left;
+    width:20%;
+    margin: auto;
+}
+
+.barra{
+    background-color: #000;
+    border-bottom:2px solid #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.barra img{
+    height:80px;
+    width: 180px;
+}
+
+
+
+.profilePic{
+    border-radius: 90px;
+    height: 30px;
+    width: 30px;
+}
+
+
+textarea{
+    resize:none;
+}
+
+.hFixer{
+    top: 90px;
+}
+
+.fRight{
+    float:right;
+}
+
+.button {
+    padding:6px 15px;
+    border:2px solid #005500;
+    background:#00cc00;
+    color:#000;
+}
+
+.feegIT .button{
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+    width: 280px;
+    height: 124px;
+}
+.feegIT{
+    background-image: url(../imagens/feegIT.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    width: 250px;
+    height: 80px;
+    background-color: #222222;
+    border: 2px solid #000;
+    background: linear-gradient(top, #34696f, #2f5f63);
+    border-radius: 10px;
+    box-shadow: 3px 8px 0 #000;
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+.feegIT:active{
+    box-shadow: 1.5px 4px 0 #000;
+    transform: translateY(4px);
+}
+
+.feegIT#minor{
+    display: block;
+    width: 125px;
+    height: 40px;
+    
+}
