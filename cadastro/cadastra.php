@@ -52,14 +52,18 @@
 		}
 		else{
 			include "../database/conectaSQL.php";
-			$senha=md5($senha);
-			$sql = "INSERT INTO user(nome, usuario, senha, sexo, email, dataNascimento) VALUES('$nome', '$usuario','$senha', '$sexo', '$email','$dataNascimento')";
-			$resultado = mysqli_query($conexao, $sql);
-			if($resultado){
-                            session_start();
-                            $_SESSION['FEEGusuario']=$usuario;
-                            header("Location:../index.php");
-			}
+                        mkdir('../user/'.$usuario,0777, true);
+                        if(copy('../imagens/person.png','../user/'.$usuario.'/imgperfil.gif')){
+                          $senha=md5($senha);
+                            $sql = "INSERT INTO user(nome, usuario, senha, sexo, email, dataNascimento,imagem) VALUES('$nome', '$usuario','$senha', '$sexo', '$email','$dataNascimento','person.png')";
+                            $resultado = mysqli_query($conexao, $sql);
+                            if($resultado){
+                                session_start();
+                                $_SESSION['FEEGusuario']=$usuario;
+                                header("Location:../index.php");
+                            }  
+                        }
+			
 		}
 	?>
     </body>

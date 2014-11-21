@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 20-Nov-2014 às 23:10
+-- Generation Time: 21-Nov-2014 às 02:12
 -- Versão do servidor: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `timeline` (
   `title` varchar(200) NOT NULL,
   `tlID` int(255) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`tlID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Extraindo dados da tabela `timeline`
@@ -39,7 +39,8 @@ CREATE TABLE IF NOT EXISTS `timeline` (
 
 INSERT INTO `timeline` (`username`, `title`, `tlID`) VALUES
 ('felipemramos', 'Hello Worl!', 1),
-('felipemramos', 'Hello Worl!', 2);
+('felipemramos', 'Hello Worl!', 2),
+('GMargonato', 'apache', 3);
 
 -- --------------------------------------------------------
 
@@ -55,15 +56,18 @@ CREATE TABLE IF NOT EXISTS `user` (
   `senha` varchar(100) NOT NULL,
   `dataNascimento` date NOT NULL,
   `sexo` varchar(10) NOT NULL,
+  `imagem` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Extraindo dados da tabela `user`
 --
 
-INSERT INTO `user` (`ID`, `nome`, `email`, `usuario`, `senha`, `dataNascimento`, `sexo`) VALUES
-(2, 'Felipe Marques Ramos', 'felipe.m.ramos@hotmail.com', 'felipemramos', '25f9e794323b453885f5181f1b624d0b', '1994-12-20', 'Masculino');
+INSERT INTO `user` (`ID`, `nome`, `email`, `usuario`, `senha`, `dataNascimento`, `sexo`, `imagem`) VALUES
+(2, 'Felipe Marques Ramos', 'felipe.m.ramos@hotmail.com', 'felipemramos', '25f9e794323b453885f5181f1b624d0b', '1994-12-20', 'Masculino', '1'),
+(3, 'Gabriel Margonato', 'gabriel-merida@hotmail.com', 'GMargonato', '25f9e794323b453885f5181f1b624d0b', '2014-11-05', 'Masculino', ''),
+(5, 'Teste', 'teste@teste.com', 'teste', '25f9e794323b453885f5181f1b624d0b', '1994-12-20', 'Feminino', 'person.png');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

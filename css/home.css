@@ -78,6 +78,22 @@ nav ul li {
     padding: 2px;
     color:#000;
 }
+#troca{
+    display: block;
+    background-color: rgba(239, 239, 239, 0.77);
+    border: 2px solid #404040;
+    border-radius: 10px;
+    padding: 2px;
+    color:#000;
+    margin-top: 25px;
+    width: 50%;
+}
+
+#troca form{
+    margin: 0 auto;
+    padding:auto;
+    width: 50%;
+}
 
 /*Menu drop down*/
 

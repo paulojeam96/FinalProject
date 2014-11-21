@@ -16,7 +16,8 @@
                     $usuario = $_SESSION['FEEGusuario'];
                 }
                 
-                $usuarioIMG="<img src='imagens/person.png' alt='profile pic' class='profilePic ico' id='ico'/>";
+                include "database/read.php";
+                $usuarioIMG="<img src='user/$usuario/imgperfil.gif' alt='profile pic' class='profilePic' />";
             ?>
             <header >
                 <nav class="barra" >
@@ -33,14 +34,14 @@
                 <aside>
                     <div class="profile">
                         <header>
-                            <img src='imagens/person.png' alt='profile pic' class='profilePic'/>
+                            <?php echo "$usuarioIMG"?>
                             <b><a><?php echo "$usuario"?> </a> </b>
                             <ul >
                                 <li class="drop"><img src="imagens/config.png" alt="configuracoes" />
                                     <ul>
                                         <div class="setaUP"></div>
                                         <li><a href="sair.php">Desconectar</a></li>
-                                        <li><a href="sair.php">Trocar imagem</a></li>
+                                        <li><a href="trocar.php">Trocar imagem</a></li>
                                     </ul>
                                 </li>
 
