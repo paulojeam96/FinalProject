@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 21-Nov-2014 às 02:12
+-- Generation Time: 21-Nov-2014 às 03:34
 -- Versão do servidor: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -39,8 +39,8 @@ CREATE TABLE IF NOT EXISTS `timeline` (
 
 INSERT INTO `timeline` (`username`, `title`, `tlID`) VALUES
 ('felipemramos', 'Hello Worl!', 1),
-('felipemramos', 'Hello Worl!', 2),
-('GMargonato', 'apache', 3);
+('felipemramos', 'Its a me ', 2),
+('GMargonato', 'zoboomafoo', 3);
 
 -- --------------------------------------------------------
 

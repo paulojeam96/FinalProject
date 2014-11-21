@@ -9,7 +9,7 @@
 
     <body>
 
-        <div class="container" id="troca">
+        <div class="container" id="meio">
             <form action="troca2.php" enctype="multipart/form-data" method="POST">
                 <input type="hidden" name="MAX_SIZE_FILE" value="100000"/>
                 <p>Deseja trocar a Imagem?:<br/><div id="mandarA"><input id="mandar" name="arquivo" type="file"/></div></p>

@@ -48,7 +48,7 @@
                             </ul>
                         </header>
                     </div>
-                    
+                    <a href="feegIT.php">upload</a>
                 </aside>
                 <section id="main">
                     <?php
@@ -79,14 +79,7 @@ POST;
 
                     ?>  
                 </section>
-                <div id="vai">
-                    <form action="upload.php" enctype="multipart/form-data" method="POST">
-                        <input type="hidden" name="MAX_SIZE_FILE" value="100000"/>
-                        <p>POST a fun:<br/><div id="mandarA"><input id="mandar" name="arquivo" type="file"/></div></p>
-                    <p>Titulo:<input  name="title" type="text" required/></p>
-                    <p><input class="button" id="button" type="submit" value="FEEGIT"/></p>
-                    </form>
-                </div>
+                
             </div>
             
 	</body>
