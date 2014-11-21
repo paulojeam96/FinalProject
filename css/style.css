@@ -6,6 +6,8 @@ body{
     padding: 0;
     margin: 0;
     color: #FFF;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .container{
@@ -40,6 +42,9 @@ aside{
 .barra{
     background-color: #000;
     border-bottom:2px solid #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 .barra img{
@@ -61,7 +66,7 @@ textarea{
 }
 
 .hFixer{
-    top: 75px;
+    top: 90px;
 }
 
 .fRight{
@@ -75,14 +80,14 @@ textarea{
     color:#000;
 }
 
-#cadButton .button{
+.feegIT .button{
     overflow: hidden;
     opacity: 0;
     display: block;
     width: 280px;
     height: 124px;
 }
-#cadButton{
+.feegIT{
     background-image: url(../imagens/feegIT.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -97,7 +102,14 @@ textarea{
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
 }
 
-#cadButton:active{
+.feegIT:active{
     box-shadow: 1.5px 4px 0 #000;
     transform: translateY(4px);
+}
+
+.feegIT#minor{
+    display: block;
+    width: 125px;
+    height: 40px;
+    
 }

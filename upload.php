@@ -66,7 +66,6 @@
             $destino='timeline/' . $idPost.".gif";
             #Move o temporário para o destino e verifica se está tudo ok
             if(move_uploaded_file($arquivo['tmp_name'],$destino)){
-                    //echo header("location:index.php");
                 echo"foi";
             }
             
@@ -77,7 +76,7 @@
             $resultado = mysqli_query($conexao, $sql);
             if($resultado)
               {
-               echo "Imagem inserida com sucesso!";
+               echo header("location:index.php");
               } 
               else {
                echo "$username";

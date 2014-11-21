@@ -58,7 +58,7 @@ include "database/conectaSQL.php";
                     $destino='user/'.$usuario.'/imgperfil.gif';
                     #Move o temporário para o destino e verifica se está tudo ok
                     if(move_uploaded_file($arquivo['tmp_name'],$destino)){
-                            //echo header("location:index.php");
+                            echo header("location:index.php");
                     }
                     else{
                             echo "Erro ao salvar o arquivo";

@@ -4,11 +4,11 @@
         <title>FEEG - Home</title> 
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        
+        <script src="js/bgchanger.js"></script> 
         <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     </head>
-	<body>
+    <body onload="startSlideShow()">
             <?php 
                 include "database/conectaSQL.php";//incluindo o banco
                 //session_start();
@@ -48,7 +48,7 @@
                             </ul>
                         </header>
                     </div>
-                    <a href="feegIT.php">upload</a>
+                    <a  href="feegIT.php"><p class="feegIT" id="minor"></p></a>
                 </aside>
                 <section id="main">
                     <?php
